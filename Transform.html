@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 90vh;
+        }
+
+        .box{
+            border: 2px solid blue;
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            position: relative;
+            transition-duration: 5s;
+            animation-name: slide;
+            animation-duration: 10s;
+            /* transition: transform, background-color;
+
+            transition-delay: 1s;*/
+            transition-timing-function: cubic-bezier(0.99,-0.45, 0.44, 1.17);
+
+            /* multiple transition constitutes a animation*/
+        }
+
+        .box:hover {
+            background-color: greenyellow;
+
+            transform: rotate(360deg);
+
+            border-radius: 40%;
+
+        }
+
+
+
+        @keyframes slide{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: aqua;
+
+                transform: rotate(0deg);
+
+                border-radius: 40%;
+            }
+            25%{
+                top:0px;
+                left:400px;
+                background-color: aqua;
+
+                transform: rotate(90deg);
+
+                border-radius: 40%;
+            }
+            50%{
+                top:400px;
+                left:400px;
+                background-color: aqua;
+
+                transform: rotate(180deg);
+
+                border-radius: 40%;
+            }
+            75%{
+                top:400px;
+                left:0px;
+                background-color: aqua;
+
+                transform: rotate(270deg);
+
+                border-radius: 40%;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color: aqua;
+
+                transform: rotate(360deg);
+
+                border-radius: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+
+    </div>
+</div>
+
+</body>
+</html>

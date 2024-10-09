@@ -1,0 +1,35 @@
+.navbar{
+    border: 2px solid red;
+    height: 15vh;
+    display: flex;
+
+}
+.container2{
+    border: 2px solid green;
+    height: 70vh;
+    display: flex;
+}
+.footer{
+    border: 2px solid blue;
+    height: 15vh;
+}
+.child1{
+    border: 2px solid aqua;
+    width: 50%;
+    margin: 3px;
+}
+.child2{
+    border: 2px solid orchid;
+    width: 50%;
+    margin: 3px;
+}
+.child3{
+    border: 2px solid orange;
+    width: 50%;
+    margin: 3px;
+}
+.child4{
+    border: 2px solid rgb(12,222,0);
+    width: 50%;
+    margin: 3px;
+}

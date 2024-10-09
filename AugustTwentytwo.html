@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+</head>
+<style>
+    .container{
+        background-color: whitesmoke;
+        width: 100px;
+        height: 100px;
+        border: 2px blue solid;
+        margin: 50px;
+        display: flex;
+
+    }
+    .div1:hover{
+        transform: rotate3d(1,1,0,80deg);
+    }
+    .div2:active{
+        transform: scale3d(20%,20%,20%);
+    }
+    .div3:hover{
+        transform: skew(40deg);
+    }
+    .div4:hover{
+        transform: translate(100%) rotate(40deg) ;
+    }
+    h3:hover{
+        transform: scale(2);
+
+    }
+</style>
+<body>
+<div class="container div1">
+    Division 1
+</div>
+<div class="container div2">
+    Division 2
+</div>
+<div class="container div3">
+    Division 3
+</div>
+<div class="container div4">
+    Division 4
+</div>
+<h3>Sachin</h3>
+</body>
+</html>

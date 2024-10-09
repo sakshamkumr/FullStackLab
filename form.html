@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        p::first-line{
+            background-color: cornflowerblue;
+        }
+        p::selection{
+            color: red;
+            background-color: black;
+        }
+        div{
+
+            margin: 20px;
+            margin-inline: 15px;
+
+
+        }
+        fieldset{
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<h1 >Forms in HTML</h1>
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+    <div>
+       <label for="name">Name:</label>
+       <input type="text" placeholder="Enter your name" id="name">
+    </div>
+
+    <div>
+        <label >Age:</label>
+        <input type="number" placeholder="Enter your age" >
+    </div>
+
+    <div>
+        <label >Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+    </div>
+    <div>
+        <label >Password</label>
+        <input type="password" placeholder="Enter password">
+
+    </div>
+    </fieldset>
+    <fieldset >
+        <legend>Essential Details</legend>
+   <div>
+       <label >File</label>
+       <input type="file" placeholder="Choose file">
+
+   </div>
+    <div>
+        <label >Date</label>
+        <input type="date" placeholder="Enter current date">
+    </div>
+    <div>
+        <label >Gender</label>
+        <input type="radio" name="abcde">Male
+        <input type="radio" name="abcde">Female
+        <input type="radio" name="abcde">None
+    </div>
+    <div>
+        <label>Movies</label>
+        <select>
+            <option value="">KGF</option>
+            <option value="">RRR</option>
+            <option value="">I</option>
+            <option value="">Welcome</option>
+
+        </select>
+    </div>
+    </fieldset>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+
+
+
+</form>
+
+
+</body>
+</html>
